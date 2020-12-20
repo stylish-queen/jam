@@ -79,7 +79,7 @@ vuln = "\033[32mVuln"
 
 os.system("clear")
 print "\x1b[0;31m⚔════════════════════════☠════════════════════════⚔"
-print  """\x1b[0;31m [¤] \x1b[0;31mASSALAM O ALAIKUM\x1b[0;31m  \033[1;96m   
+print  """\x1b[0;31m [¤]\x1b[0;31mASSALAM O ALAIKUM\x1b[0;31m  \033[1;96m   
 \033[1;96m[¤] \x1b[0;31mWHATSAPP : +971528752764\x1b[1;96m  
 \033[1;93m[¤] \x1b[0;31mFACEBOOK : JAM SHAHRUKH\x1b[1;96m  
 \033[1;93m[¤] \x1b[0;31mYOUTUBE  : JAM SHAHRUKH TECHNICAL \x1b[0;31m"""
@@ -126,7 +126,7 @@ def methodlogin():
 		print "\n[✓] Logged In Successfully."
 		time.sleep(1)
 		os.system('xdg-open https://www.youtube.com/channel/UCe6wmIybCxpRSB4o6pozMOA')
-		super()
+		menu()
 	elif hos =="0":
 		exit()
 	else:
@@ -154,7 +154,7 @@ def login():
 		    time.sleep(1)
 		    os.system('xdg-open https://www.youtube.com/channel/UCe6wmIybCxpRSB4o6pozMOA')
 		    os.system("clear")
-		    super()
+		    menu()
 		else:
 		    if "www.facebook.com" in z["error_msg"]:
 		        print ('[!] User Must Verify Account Before Login.')
@@ -492,4 +492,4 @@ def brute():
             super()
 
 if __name__ == '__main__':
-	methodlogin()
+	menu()
