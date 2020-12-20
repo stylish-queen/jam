@@ -78,12 +78,12 @@ vulnot = "\033[31mNot Vuln"
 vuln = "\033[32mVuln"
 
 os.system("clear")
-print "\x1b[0;31m⚔════════════════════════☠════════════════════════⚔"
+print "\033[1;97m⚔════════════════════════☠════════════════════════⚔"
 print  """\033[1;96m[¤] \x1b[0;31mASSALAM O ALAIKUM\x1b[0;31m  \033[1;96m   
 \033[1;96m[¤] \x1b[0;31mWHATSAPP : +923053176060\x1b[1;96m  
 \033[1;93m[¤] \x1b[0;31mFACEBOOK : JAM SHAHRUKH\x1b[1;96m  
 \033[1;93m[¤] \x1b[0;31mYOUTUBE  : JAM SHAHRUKH TECHNICAL \x1b[0;31m"""
-print " \x1b[1;93m⚔═══════════════════════☠════════════════════════⚔"
+print "\033[1;97m⚔═══════════════════════☠════════════════════════⚔"
 
 CorrectUsername = "jam"
 CorrectPassword = "jam"
