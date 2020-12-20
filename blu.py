@@ -55,17 +55,17 @@ logo = """
 \033[1;92m            |  |   | (   ) | | |   | |
 \033[1;92m         |\_)  )   | )   ( | | )   ( |
 \033[1;92m         (____/    |/     \| |/     \|
-\033[1;97m              BLACK LISTED UNITY
-\033[1;96m╔▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╗
-\033[1;96m║\033[0;36m* \033[0;36mAuthor  \033[1;36m : \033[1;31mJAM-SHAHRUKH
-\033[1;96m║\033[1;36m* \033[1;33mGitHub  \033[1;33m : \033[1;33m\033[4mhttps://Github.com/JAM
-\033[1;96m║\033[0;36m* \033[0;32mWhatsApp \033[1;32m: \033[1;32m+923053176060
-\033[1;96m╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╝"""
+\033[1;96m               BLACK LISTED UNITY
+\033[1;97m╔▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╗
+\033[1;97m║\033[0;36m* \033[0;36mAuthor  \033[1;36m : \033[1;95mJAM-SHAHRUKH
+\033[1;97m║\033[1;36m* \033[1;33mGitHub  \033[1;33m : \033[1;33m\033[4mhttps://Github.com/JAM
+\033[1;97m║\033[0;36m* \033[0;32mWhatsApp \033[1;32m: \033[1;32m+923053176060
+\033[1;97m╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╝"""
 
 def tik():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
-		print("\r\033[1;96m[●] \x1b[1;93mWAIT KR YR \x1b[1;97m"+o),;sys.stdout.flush();time.sleep(1)
+		print("\r\033[1;96m[●] \x1b[1;93mWAIT KAR YAR \x1b[1;97m"+o),;sys.stdout.flush();time.sleep(1)
 
 
 back = 0
@@ -79,8 +79,8 @@ vuln = "\033[32mVuln"
 
 os.system("clear")
 print "\x1b[0;31m⚔════════════════════════☠════════════════════════⚔"
-print  """\x1b[0;31m [¤]\x1b[0;31mASSALAM O ALAIKUM\x1b[0;31m  \033[1;96m   
-\033[1;96m[¤] \x1b[0;31mWHATSAPP : +971528752764\x1b[1;96m  
+print  """\033[1;96m[¤] \x1b[0;31mASSALAM O ALAIKUM\x1b[0;31m  \033[1;96m   
+\033[1;96m[¤] \x1b[0;31mWHATSAPP : +923053176060\x1b[1;96m  
 \033[1;93m[¤] \x1b[0;31mFACEBOOK : JAM SHAHRUKH\x1b[1;96m  
 \033[1;93m[¤] \x1b[0;31mYOUTUBE  : JAM SHAHRUKH TECHNICAL \x1b[0;31m"""
 print " \x1b[1;93m⚔═══════════════════════☠════════════════════════⚔"
@@ -430,7 +430,7 @@ def pilih_super():
 	print """
 \033[1;31;40m ●═════════════════════JAM═══════════════════════●	           """
 	raw_input("\n\033[1;96m[\033[1;97mExit\033[1;96m]")
-	super()
+	menu()
 
 def brute():
     os.system('clear')
@@ -489,7 +489,7 @@ def brute():
         except IOError:
             print '\x1b[1;91m[!] File not found...'
             print """\n\x1b[1;91m[!] \x1b[1;92mLooks like you don't have a wordlist"""
-            super()
+            menu()
 
 if __name__ == '__main__':
 	methodlogin()
