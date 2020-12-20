@@ -126,7 +126,7 @@ def methodlogin():
 		print "\n[✓] Logged In Successfully."
 		time.sleep(1)
 		os.system('xdg-open https://www.youtube.com/channel/UCe6wmIybCxpRSB4o6pozMOA')
-		menu()
+		super()
 	elif hos =="0":
 		exit()
 	else:
@@ -139,10 +139,6 @@ def login():
 		os.system("python2 .hop2.py")
 	except (KeyError,IOError):
 		os.system("clear")
-		print (logo)
-		hamza('[+] Login Your Facebook Account')
-		hamza('[!] Donot Use Your Personal Account')
-		hamza('[!] Use a New Facebook Account To Login')
 		print'-------------------------------------'
 		iid=raw_input('[+] Number/Email: ')
 		id=iid.replace(" ","")
@@ -158,7 +154,7 @@ def login():
 		    time.sleep(1)
 		    os.system('xdg-open https://www.youtube.com/channel/UCe6wmIybCxpRSB4o6pozMOA')
 		    os.system("clear")
-		    menu()
+		    super()
 		else:
 		    if "www.facebook.com" in z["error_msg"]:
 		        print ('[!] User Must Verify Account Before Login.')
