@@ -175,7 +175,7 @@ def menu():
 		print"\x1b[1;91m[!] Token invalid"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
-		login()
+		methodlogin()
 	try:
 		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
 		a = json.loads(otw.text)
@@ -189,7 +189,7 @@ def menu():
 		print"\033[1;91mYour Account is on Checkpoint"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
-		login()
+		methodlogin()
 	except requests.exceptions.ConnectionError:
 		print"\x1b[1;92mThere is no internet connection"
 		keluar()
@@ -236,7 +236,7 @@ def super():
 		print"\x1b[1;91mToken invalid"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
-		login()
+		methodlogin()
 	os.system('clear')
 	print logo
 	print "\x1b[1;32;40m[1] \033[1;33;40m══Hack From Friend List"
@@ -440,7 +440,7 @@ def brute():
         print '\x1b[1;91m[!] Token not found'
         os.system('rm -rf login.txt')
         time.sleep(0.5)
-        login()
+        methodlogin()
     else:
         os.system('clear')
         print logo
